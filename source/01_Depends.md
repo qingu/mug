@@ -1,14 +1,14 @@
 # 第一步
 ## 依赖环境准备
 
-依赖库 | 环境变量设置 | 说明 
-:------:---------------:-----:
-netCDF | NETCDF      | 支持netCDF-4/HDF格式 
-Jasper | JASPER 或 JASPER_ROOT | 
-LAPACK | LAPACK_ROOT |
-PnetCDF| PNETCDF     | 版本不低于1.3.0
-NCEPLIBS | NCEPLIBS_DIR | 
-CMake |       | 版本不低于3.0.0
+| 依赖库 | 环境变量设置 | 说明 |
+|:------:|:---------------:|:-----:|
+| netCDF | NETCDF      | 支持netCDF-4/HDF格式 |
+| Jasper | JASPER 或 JASPER_ROOT | 
+| LAPACK | LAPACK_ROOT |   |
+| PnetCDF| PNETCDF     | 版本不低于1.3.0 |
+| NCEPLIBS | NCEPLIBS_DIR |  |
+| CMake |       | 版本不低于3.0.0 |
 
 如果用户使用中国气象局新一代高性能计算机平台，依赖环境设置建议如下：
 
