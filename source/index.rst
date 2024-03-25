@@ -8,11 +8,11 @@ Welcome to mcv-notes's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: 目录
    :glob:
 
-   运行篇/index
-   源码篇/index
+   运行篇 <运行篇/index>
+   源码篇 <源码篇/index>
 
 
 
