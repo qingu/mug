@@ -10,13 +10,7 @@ Welcome to mcv-notes's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   01_Depends
+   运行篇/index
 
 
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
