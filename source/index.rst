@@ -9,8 +9,10 @@ Welcome to mcv-notes's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   :glob:
 
    运行篇/index
+   源码篇/index
 
 
 
