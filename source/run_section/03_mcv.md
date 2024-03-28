@@ -91,28 +91,28 @@ $ vi Experiments/PMCV/CCPL_dir/config/all/env_run.xml
 
 1. runcase提交作业
 
-在Experiments/PMCV目录下提交runcase脚本。
-
-注意只能在PMCV目录下提交作业
-
-```bash
-$ cd Experiments/PMCV 
-$ ./runcase
-```
-
-这种提交方式如果需要修改计算核数，必须提前修改配置文件Experiments/PMCV/config/common/case.conf并执行configure脚本使设置生效。
-
+ 在Experiments/PMCV目录下提交runcase脚本。
+ 
+ 注意只能在PMCV目录下提交作业
+ 
+ ```bash
+ $ cd Experiments/PMCV 
+ $ ./runcase
+ ```
+ 
+ 这种提交方式如果需要修改计算核数，必须提前修改配置文件Experiments/PMCV/config/common/case.conf并执行configure脚本使设置生效。
+ 
 2. 直接提交作业脚本
 
-如果Experiments/PMCV/job_logs目录下已存在类似job.submit.xxxx作业脚本，可以在PMCV目录下直接使用sbatch提交该作业脚本，修改作业运行参数不需要执行configure脚本。
-
-```bash
-$ cd Experiments/PMCV  # 必须在该目录下提交，否则会运行出错
-$ sbatch job_logs/job.submit.xxxx
-```
-
-模式标准输出和标准错误会重定向到log文件中，job_logs目录下日志文件PMCV.error.xxxx, PMCV.output.xxxx （具体与作业脚本设置有关）。
-
+ 如果Experiments/PMCV/job_logs目录下已存在类似job.submit.xxxx作业脚本，可以在PMCV目录下直接使用sbatch提交该作业脚本，修改作业运行参数不需要执行configure脚本。
+ 
+ ```bash
+ $ cd Experiments/PMCV  # 必须在该目录下提交，否则会运行出错
+ $ sbatch job_logs/job.submit.xxxx
+ ```
+ 
+ 模式标准输出和标准错误会重定向到log文件中，job_logs目录下日志文件PMCV.error.xxxx, PMCV.output.xxxx （具体与作业脚本设置有关）。
+ 
 
 
 
