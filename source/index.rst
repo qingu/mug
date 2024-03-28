@@ -3,20 +3,20 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to mcv-notes's documentation!
+MCV学习笔记
 =====================================
 
 .. toctree::
    :maxdepth: 2
    :caption: 运行篇
 
-   运行篇 <运行篇/index>
+   run_section/index
 
 .. toctree::
    :maxdepth: 2
    :caption: 源码篇
 
-   源码篇 <源码篇/index>
+   code_section/index
 
 
 
