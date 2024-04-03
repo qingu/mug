@@ -17,7 +17,7 @@ models
     └── Sources
         ├── ccpl_dp_coupling
         ├── dynamics
-        ├── gfsphysics
+        ├── physics
         ├── IO
         ├── main.F90
         ├── parallel
@@ -31,7 +31,7 @@ models
 - main.F90: MCV模式主程序，控制模式流程
 - share: 模式全局数据定义和后处理实现目录
 - dynamics: MCV动力框架目录
-- gfsphysics: 物理参数化方案目录
+- physics: 物理参数化方案目录
 - ccpl_dp_coupling: MCV动力物理耦合实现目录，包括物理过程调用驱动
 - IO: 模式初始场读入实现目录
 - parallel: MCV模式并行软件框架目录
