@@ -5,6 +5,7 @@
 |:------:|:---------------:|:-----:|
 | netCDF | NETCDF      | 支持netCDF-4/HDF格式 |
 | Jasper | JASPER 或 JASPER_ROOT | 
+| PNG    | PNG 或 PNG_ROOT |   |
 | LAPACK | LAPACK_ROOT |   |
 | PnetCDF| PNETCDF     | 版本不低于1.3.0 |
 | NCEPLIBS | NCEPLIBS_DIR |  |
@@ -16,6 +17,7 @@
 # vi ~/.bashrc
 module load netcdf_no_pnetcdf/4.8.1/intel
 module load jasper/1.900.19/intel 
+module load libpng/1.6.39/intel
 module load cmake/3.25.3/gnu
 module load pnetcdf/1.12.3/intel
 
