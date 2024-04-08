@@ -6,3 +6,17 @@
 
 解决方法：修改Experiments/PMCV/CCPL_dir/config/all/env_run.xml中节点值start_second和start_second与namelist.atm匹配。
 
+## MCV模式运行日志提示C-Coupler初始化失败错误。
+
+原因：如果PMCV.out.xxx文件中提示如下错误
+
+```
+C-Coupler REPORT ERROR: Fail to initialize C-Coupler: the directory ("/.../PMCV/job_logs/CCPL_dir/config") for configuration files of C-Coupler does not exit.
+```
+
+表明作业提交脚本没有在PMCV目录下提交。C-Coupler需要设置PMCV为工作目录，读取的配置文件目录是工作目录的相对位置。
+
+解决方法：在PMCV目录下提交作业脚本或者在作业提交脚本中设置当前工作目录为PMCV目录。
+
+
+

@@ -19,7 +19,7 @@ MCV模式默认提供全球模式在中国气象局新一代高性能计算平�
 如果用户在该平台运行MCV，可以使用以下简便安装方法。
 
 ```bash
-$ cd MCV_PUBLIC-v1.0/CCPL_PMCV/Experiments/PMCV
+$ cd MCV_PUBLIC_v1.0/CCPL_PMCV/Experiments/PMCV
 $ source setenv.sh
 # 修改作业提交wckey信息,文件submit.sbatch.generic_linux第80行
 $ vi config/common/machine/generic_linux/submit.sbatch.generic_linux
@@ -89,7 +89,7 @@ $ vi Experiments/PMCV/CCPL_dir/config/all/env_run.xml
 
 两种方法：
 
-1. runcase提交作业
+- runcase提交作业
 
  在Experiments/PMCV目录下提交runcase脚本。
  
@@ -102,7 +102,7 @@ $ vi Experiments/PMCV/CCPL_dir/config/all/env_run.xml
  
  这种提交方式如果需要修改计算核数，必须提前修改配置文件Experiments/PMCV/config/common/case.conf并执行configure脚本使设置生效。
  
-2. 直接提交作业脚本
+- 直接提交作业脚本
 
  如果Experiments/PMCV/job_logs目录下已存在类似job.submit.xxxx作业脚本，可以在PMCV目录下直接使用sbatch提交该作业脚本，修改作业运行参数不需要执行configure脚本。
  

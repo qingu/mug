@@ -13,14 +13,14 @@ MPS系统分为四个部分，分别为grib数据解码模块ungrib，地形及�
 # export LAPACK_ROOT=/path/to/install/lapack
 # export NETCDF=/path/to/install/netcdf   
 
-$ tar xzvf MCV_PUBLIC-v1.0.tar.gz
-$ cd MCV_PUBLIC-v1.0/MPS
+$ tar xzvf MCV_PUBLIC_v1.0.tar.gz
+$ cd MCV_PUBLIC_v1.0/MPS
 $ mkdir build
 $ cd build
 $ FC=ifort CC=icc cmake ..
 $ make -j 8
 $ cd ../run
-$ ln -s ../build/*.exe .
+$ ln -sf ../build/*.exe .
 ```
 
 ## 运行MPS
@@ -38,7 +38,7 @@ $ ./gengeo.exe
 
 # 链接GRIB文件，生成GRIBFILE.XXX文件
 # NCEP GFS测试数据示例
-$ ./ link_grib.csh $FIX_DATA/source_data/met_data/NCEP_GFS/2022081000/gfs.t00z.pgrb2.0p50.f000
+$ ./link_grib.csh $FIX_DATA/source_data/met_data/NCEP_GFS/2022081000/gfs.t00z.pgrb2.0p50.f000
 
 # 解码GRIB文件，生成FILE:YYYY-MM-DD_HH的二进制文件
 $ ./ungrib.exe
