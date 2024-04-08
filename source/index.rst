@@ -9,14 +9,12 @@ MCV学习笔记
 .. toctree::
    :maxdepth: 1
    :caption: 运行篇
-   :hidden:
 
    run_section/index
 
 .. toctree::
    :maxdepth: 1
    :caption: 开发篇
-   :hidden:
 
    code_section/index
 
