@@ -19,6 +19,6 @@ MCV学习笔记
    code_section/index
 
 .. warning::
-   本站内容仅为个人学习MCV模式记录，非官方文档。
+   本站内容为个人学习MCV模式记录，并非官方文档，仅供参考。
 
 
