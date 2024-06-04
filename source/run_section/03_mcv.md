@@ -47,7 +47,7 @@ $ ./compile
 
 ### 区域模式安装方法
 
-在配置文件`CCPL_PMCV/Experiments/PMCV/config/atm/MCV/compiler.cfg`中将条件预编译参数**DEF**中`-DCUBE`替换为`-DLATLON`，安装方法与全球模式相同。
+在配置文件`CCPL_PMCV/Experiments/PMCV/config/atm/MCV/compiler.cfg`中将条件预编译参数**DEF**中`-DCUBE`替换为`-DLONLAT`，安装方法与全球模式相同。
 
 ## 运行MCV模式
 
