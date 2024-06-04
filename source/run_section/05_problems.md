@@ -4,7 +4,7 @@
 
 原因：MCV模式namelist.atm设置的模拟起报时间与env_run.xml不一致。
 
-解决方法：修改Experiments/PMCV/CCPL_dir/config/all/env_run.xml中节点值start_second和start_second与namelist.atm匹配。
+解决方法：修改Experiments/PMCV/CCPL_dir/config/all/env_run.xml中节点值start_date和start_second组合与namelist.atm匹配。其中start_second代表一天中经过的秒数。
 
 ## MCV模式运行日志提示C-Coupler初始化失败错误。
 
