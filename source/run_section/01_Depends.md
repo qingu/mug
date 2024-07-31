@@ -25,11 +25,11 @@ export PNETCDF=/g1/app/mathlib/pnetcdf/1.12.3/intel
 
 if [[ $HOSTNAME == login_a* || $HOSTNAME == login_b* ]]; then
   export NCEPLIBS_DIR=/g5/jiangqg/share/NCEPlibs 
-  export FIX_DATA=/g5/jiangqg/share/FIX_DATA
+  export FIX_DATA=/g5/jiangqg/share/FIX_DATA/v16.1.5
   export WCKEY=xxx-xx-xx # CMA HPC用户根据分配的wckey信息设置，其它环境不需要设置
 elif [[ $HOSTNAME == login_c* ]]; then
   export NCEPLIBS_DIR=/g4/jiangqg/share/NCEPlibs 
-  export FIX_DATA=/g4/jiangqg/share/FIX_DATA
+  export FIX_DATA=/g4/jiangqg/share/FIX_DATA/v16.1.5
   export WCKEY=xxx-xx-xx # CMA HPC用户根据分配的wckey信息设置，其它环境不需要设置
 fi
 ```
