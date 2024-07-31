@@ -21,9 +21,6 @@ MCV模式默认提供全球模式在中国气象局新一代高性能计算平�
 ```bash
 $ cd MCV_PUBLIC_v1.0/CCPL_PMCV/Experiments/PMCV
 $ source setenv.sh
-# 修改作业提交wckey信息,文件submit.sbatch.generic_linux第80行
-$ vi config/common/machine/generic_linux/submit.sbatch.generic_linux
-
 $ ./configure
 $ ./clean all
 $ ./compile
@@ -61,7 +58,7 @@ $ ./compile
 
 ```bash
 $ cd PMCV/run/atm/MCV/data 
-$ ./link_clim.sh   #确保脚本中FIX_AM指向正确的静态数据路径
+$ ./link_clim.sh   #确保已设置环境变量FIX_DATA
 ```
 
 - 模式配置文件准备

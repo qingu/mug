@@ -23,6 +23,7 @@ module load pnetcdf/1.12.3/intel
 
 export NCEPLIBS_DIR=/g5/jiangqg/share/NCEPlibs 
 export PNETCDF=/g1/app/mathlib/pnetcdf/1.12.3/intel
+export WCKEY=xxx-xx-xx # CMA HPC用户根据分配的wckey信息设置，其它环境不需要设置
 ```
 
 ## MCV静态数据及源代码包准备
@@ -31,8 +32,15 @@ export PNETCDF=/g1/app/mathlib/pnetcdf/1.12.3/intel
 
 MCV模式运行所需的参考廓线、物理静态数据等。
 
-在中国气象局新一代高性能计算机上可以直接使用公共静态数据，存放目录是`/g5/jiangqg/share/FIX_DATA`
+在中国气象局新一代高性能计算机上可以直接使用公共静态数据，设置环境变量`FIX_DATA`.
 （后面以$FIX_DATA指代静态数据目录）。
+
+```bash
+# vi ~/.bashrc
+export FIX_DATA=/g5/jiangqg/share/FIX_DATA
+# 如果使用内蒙机器，使用以下目录
+# export FIX_DATA=/g4/jiangqg/share/FIX_DATA
+```
 
 - MCV_PUBLIC-v1.0.tar.gz
 
