@@ -37,7 +37,7 @@ $ ./gengeo.exe
 
 # 链接GRIB文件，生成GRIBFILE.XXX文件
 # NCEP GFS测试数据示例
-$ ./link_grib.csh $FIX_DATA/source_data/met_data/NCEP_GFS/2022081000/gfs.t00z.pgrb2.0p50.f000
+$ ./link_grib.csh $FIX_DATA/../source_data/met_data/NCEP_GFS/2022081000/gfs.t00z.pgrb2.0p50.f000
 
 # 解码GRIB文件，生成FILE:YYYY-MM-DD_HH的二进制文件
 $ ./ungrib.exe
