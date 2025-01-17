@@ -19,7 +19,7 @@ MCV模式默认提供全球模式在中国气象局新一代高性能计算平�
 如果用户在该平台运行MCV，可以使用以下简便安装方法。
 
 ```bash
-$ cd MCV_PUBLIC_v1.0/CCPL_PMCV/Experiments/PMCV
+$ cd CCPL_PMCV/Experiments/PMCV
 $ source setenv.sh
 $ ./configure
 $ ./clean all

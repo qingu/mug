@@ -13,8 +13,7 @@ MPS系统分为四个部分，分别为grib数据解码模块ungrib，地形及�
 # export LAPACK_ROOT=/path/to/install/lapack
 # export NETCDF=/path/to/install/netcdf   
 
-$ tar xzvf MCV_PUBLIC_v1.0.tar.gz
-$ cd MCV_PUBLIC_v1.0/MPS
+$ cd MPS
 $ mkdir build
 $ cd build
 $ FC=ifort CC=icc cmake ..
@@ -53,4 +52,16 @@ $ ./realdata.exe
 namelist.input参数说明见附录A。
 
 
+### 高（74km）/低（36km）顶版本切换
+修改namelist.input中四个参数可以灵活切换垂直层顶和层数生成MCV初始场
+
+- nz
+- z_max
+- vgrid_file
+- vgrid_deriv_file
+
+| 版本 | nz     |   z_max  | vgrid_file | vgrid_deriv_file |
+|------|--------|-----------|------------|-----------------|
+| 高顶74km L137 | 137 | 74000 | ./zbar_ML_74km_L137.dat | ./dzbardz_ML_74km_L137.dat |
+| 低顶36km L60 | 60 | 36000 | ./zbar_ML_36km_L60.dat | ./dzbardz_ML_36km_L60.dat |
 
