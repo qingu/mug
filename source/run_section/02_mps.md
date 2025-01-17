@@ -30,7 +30,7 @@ $ cd MPS/run
 # 编辑namelist.input文件
 
 # 链接MPS所需静态数据到运行目录下
-$ ln -sf $FIX_DATA/source_data .
+$ ln -sf $FIX_DATA/../source_data .
 
 # 执行gengeo程序生成MCV网格和地形文件mcv_geog.nc
 $ ./gengeo.exe
