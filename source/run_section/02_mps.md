@@ -64,8 +64,10 @@ namelist.input参数说明见附录A。
 #SBATCH -J MCV
 #SBATCH --comment=MCV
 #SBATCH --wckey=xxxx
-#SBATCH --mem-per-cpu=256G
-#SBATCH -p serial
+#SBATCH -p normal
+#SBATCH -n 1
+#SBATCH --ntasks-per-node=1
+#SBATCH -c 64
 #SBATCH -o mps_%j.out
 #SBATCH -e mps_%j.err
 
@@ -73,6 +75,7 @@ namelist.input参数说明见附录A。
 ulimit -s unlimited
 ulimit -c unlimited
 
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 
 ./gengeo.exe
 ./ungrib.exe
