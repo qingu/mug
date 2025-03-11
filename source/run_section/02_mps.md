@@ -25,12 +25,16 @@ $ ln -sf ../build/*.exe .
 ## 运行MPS
 
 ```bash
-$ cd MPS/run
-
-# 编辑namelist.input文件
+# 进入MPS根目录
+$ cd MPS
 
 # 链接MPS所需静态数据到运行目录下
 $ ln -sf $FIX_DATA/../source_data .
+
+# 进入MPS运行目录
+$ cd run
+
+# 编辑namelist.input文件
 
 # 执行gengeo程序生成MCV网格和地形文件mcv_geog.nc
 $ ./gengeo.exe
@@ -51,6 +55,30 @@ $ ./realdata.exe
 
 namelist.input参数说明见附录A。
 
+通常高性能计算机登录节点不允许运行应用程序，请参考以下SBATCH脚本提交到计算节点。
+
+```bash
+#!/bin/bash
+# mps.sbatch
+
+#SBATCH -J MCV
+#SBATCH --comment=MCV
+#SBATCH --wckey=xxxx
+#SBATCH --mem-per-cpu=256G
+#SBATCH -p serial
+#SBATCH -o mps_%j.out
+#SBATCH -e mps_%j.err
+
+
+ulimit -s unlimited
+ulimit -c unlimited
+
+
+./gengeo.exe
+./ungrib.exe
+./interpmet.exe
+./realdata.exe
+```
 
 ### 高（74km）/低（36km）顶版本切换
 修改namelist.input中四个参数可以灵活切换垂直层顶和层数生成MCV初始场
