@@ -8,10 +8,10 @@
 
 import sphinx_rtd_theme
 from recommonmark.parser import CommonMarkParser
-project = 'mcv-notes'
-copyright = '2024, MetMan'
+project = 'MCV User Guide'
+copyright = '2024-2026, MetMan'
 author = 'MetMan'
-release = '0.1'
+release = '1.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
