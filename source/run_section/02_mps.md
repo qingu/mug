@@ -14,7 +14,7 @@ MPS系统分为四个部分，分别为grib数据解码模块ungrib，地形及�
 # export NETCDF=/path/to/install/netcdf   
 
 $ cd MPS
-$ mkdir build
+$ mkdir -p build
 $ cd build
 $ FC=ifort CC=icc cmake ..
 $ make -j 8
@@ -29,6 +29,7 @@ $ ln -sf ../build/*.exe .
 $ cd MPS
 
 # 链接MPS所需静态数据到运行目录下
+$ rm -rf source_data
 $ ln -sf $FIX_DATA/../source_data .
 
 # 进入MPS运行目录

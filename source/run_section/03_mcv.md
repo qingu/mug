@@ -111,7 +111,43 @@ $ vi Experiments/PMCV/CCPL_dir/config/all/env_run.xml
  模式标准输出和标准错误会重定向到log文件中，job_logs目录下日志文件PMCV.error.xxxx, PMCV.output.xxxx （具体与作业脚本设置有关）。
  
 
+### 全球95层(74KM)运行设置建议
 
+- namelist.atm参数修改
+
+```bash
+nz = 95,
+z_max = 74000.,
+
+diff_tracer = .false.,
+diff_dyn = .false., !当dx <= 0.5时，设为 .true.
+divgdamp = .false.,
+
+wvis= 10.，
+```
+
+- input.nml
+
+通过make_input_nml.sh生成input.nml文件，修改其中`launch_level=33`
+
+### 区域60层(36KM)运行设置建议
+
+- namelist.atm参数修改
+
+```bash
+nz = 60,
+z_max = 36000.,
+
+diff_tracer = .false.,
+diff_dyn = .false., 
+divgdamp = .false.,
+
+wvis= 10.，
+```
+
+- input.nml
+
+通过make_input_nml.sh生成input.nml文件，修改其中`launch_level=25`
 
 
 
