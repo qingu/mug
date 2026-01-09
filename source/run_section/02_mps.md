@@ -84,7 +84,7 @@ export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 ./realdata.exe
 ```
 
-### 高（74km）/低（36km）顶版本切换
+### 高（74kmL95）/低（36kmL60）顶版本切换
 修改namelist.input中四个参数可以灵活切换垂直层顶和层数生成MCV初始场
 
 - nz
@@ -94,6 +94,7 @@ export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 
 | 版本 | nz     |   z_max  | vgrid_file | vgrid_deriv_file |
 |------|--------|-----------|------------|-----------------|
-| 高顶74km L137 | 137 | 74000 | ./zbar_ML_74km_L137.dat | ./dzbardz_ML_74km_L137.dat |
-| 低顶36km L60 | 60 | 36000 | ./zbar_ML_36km_L60.dat | ./dzbardz_ML_36km_L60.dat |
+| 全球高顶74km L95 | 95 | 74000 | ./zbar_ML_74km_L95.dat | ./dzbardz_ML_74km_L95.dat |
+| 全球低顶36km L60 | 60 | 36000 | ./zbar_new.dat | ./dzbardz_new.dat |
+| 区域低顶36km L60 | 60 | 36000 | ./zbar_ML_36km_L60_region.dat | ./dzbardz_ML_36km_L60_region.dat |
 
