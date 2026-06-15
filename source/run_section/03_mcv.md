@@ -117,7 +117,7 @@ $ vi Experiments/PMCV/CCPL_dir/config/all/env_run.xml
 
 ```bash
 nz = 95,
-z_max = 74000.,
+z_max = 80000.,
 
 diff_tracer = .false.,
 diff_dyn = .false., !当dx <= 0.5时，设为 .true.
